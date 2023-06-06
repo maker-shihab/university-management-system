@@ -1,0 +1,27 @@
+{
+  "name": "university-management-system",
+  "description": "- My name is Shihab. I completed my CSE diploma in 2020 and I am currently pursuing a BSc in CSE at European University. Additionally, I work as a freelancer on renowned platforms like Fiverr and Upwork. With expertise in frontend development, I have successfully designed and developed over 200 projects using popular technologies such as HTML, CSS (Bootstrap, Tailwind CSS, Material CSS), and JavaScript (jQuery, React.js, Next.js). As I progressed in my career, I expanded my skill set to become a proficient full stack developer. This portfolio showcases my proficiency in both frontend and backend development.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maker-shihab/university-management-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maker-shihab/university-management-system/issues"
+  },
+  "homepage": "https://github.com/maker-shihab/university-management-system#readme",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.2.2"
+  }
+}
