@@ -1,0 +1,22 @@
+{"level":"info","message":"🥌 Database connected successfully"}
+{"level":"info","message":"UMP listen on port 5000"}
+{"level":"info","message":"🥌 Database connected successfully"}
+{"level":"info","message":"UMP listen on port 5000"}
+2023-06-11T07:57:32.209Z [right meow!] info: 🥌 Database connected successfully
+2023-06-11T07:57:32.232Z [right meow!] info: UMP listen on port 5000
+Sun Jun 11 2023 14:6:40 [right meow!] info: 🥌 Database connected successfully
+Sun Jun 11 2023 14:6:40 [right meow!] info: UMP listen on port 5000
+Sun Jun 11 2023 2:12:12:PM [right meow!] info: 🥌 Database connected successfully
+Sun Jun 11 2023 2:12:12:PM [right meow!] info: UMP listen on port 5000
+{
+  message: '🥌 Database connected successfully',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-11T08:17:51.335Z'
+}
+{
+  message: 'UMP listen on port 5000',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-11T08:17:51.353Z'
+}
