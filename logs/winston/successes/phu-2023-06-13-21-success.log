@@ -1,0 +1,60 @@
+{
+  message: '🥌 Database connected successfully',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-13T15:49:03.805Z'
+}
+{
+  message: 'UMP listen on port 5000',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-13T15:49:03.813Z'
+}
+{
+  message: '🥌 Database connected successfully',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-13T15:49:34.573Z'
+}
+{
+  message: 'UMP listen on port 5000',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-13T15:49:34.598Z'
+}
+{
+  message: '🥌 Database connected successfully',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-13T15:51:36.633Z'
+}
+{
+  message: 'UMP listen on port 5000',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-13T15:51:36.649Z'
+}
+{
+  message: '🥌 Database connected successfully',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-13T15:52:07.060Z'
+}
+{
+  message: 'UMP listen on port 5000',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-13T15:52:07.085Z'
+}
+{
+  message: '🥌 Database connected successfully',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-13T15:55:46.186Z'
+}
+{
+  message: 'UMP listen on port 5000',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-13T15:55:46.201Z'
+}

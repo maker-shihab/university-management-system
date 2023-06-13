@@ -1,5 +1,6 @@
 import cors from 'cors'
-import express, { Application, Request, Response } from 'express'
+import express, { Application } from 'express'
+import globalErrorHandaler from './app/middlewares/globalErrorHandaler'
 import usersRouter from './app/modules/users/user.router'
 const app: Application = express()
 
@@ -13,8 +14,11 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/api/v1/users/', usersRouter)
 
 // Testing
-app.get('/', async (req: Request, res: Response) => {
-  res.send('Working Successfully')
-})
+// app.get('/', (req: Request, res: Response, next: NextFunction) => {
+//   throw new Error('Good boy this is a hand made error!')
+// })
+
+// global Error handler
+app.use(globalErrorHandaler)
 
 export default app

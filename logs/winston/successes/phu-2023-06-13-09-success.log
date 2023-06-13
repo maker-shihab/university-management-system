@@ -1,0 +1,24 @@
+{
+  message: '🥌 Database connected successfully',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-13T03:47:04.634Z'
+}
+{
+  message: 'UMP listen on port 5000',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-13T03:47:04.644Z'
+}
+{
+  message: '🥌 Database connected successfully',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-13T03:47:17.972Z'
+}
+{
+  message: 'UMP listen on port 5000',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2023-06-13T03:47:17.991Z'
+}
