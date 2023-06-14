@@ -11,17 +11,18 @@ const createUser = async (user: IUser): Promise<IUser | null> => {
   user.id = id
 
   // Default Password
-
   if (!user.password) {
     user.password = config.default_user_pass as string
   }
+
   const createdUser = await User.create(user)
+
   if (!createdUser) {
     throw new ApiError(400, 'Failed to create user!')
   }
   return createdUser
 }
 
-export default {
+export const UserService = {
   createUser,
 }
