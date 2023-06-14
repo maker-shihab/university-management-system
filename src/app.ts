@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/api/v1/users/', usersRouter)
 
 // Testing
-// app.get('/', (req: Request, res: Response, next: NextFunction) => {
+// app.get('/', async (req: Request, res: Response, next: NextFunction) => {
 //   throw new Error('Good boy this is a hand made error!')
 // })
 
