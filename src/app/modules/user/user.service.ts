@@ -1,8 +1,8 @@
 import config from '../../../config/index'
 import ApiError from '../../../error/ApiError'
+import { IUser } from './user.interface'
 import { User } from './user.model'
 import { generatedUserId } from './user.utils'
-import { IUser } from './users.interface'
 
 const createUser = async (user: IUser): Promise<IUser | null> => {
   // Auto generated incremental ID
