@@ -106,7 +106,8 @@ A database model is a conceptual representation of how data is organized and str
 - presentAddress
 - premanentAddress
 - department
-- subject
+<!-- subject -->
+- academicSemester
 
 ### Admins
 
@@ -138,6 +139,22 @@ A database model is a conceptual representation of how data is organized and str
 - department
 - faculty
 - designation
+
+### Academic Semester:
+
+- title
+- year
+- code
+- startMonth
+- endMonth
+
+### Sample Date:
+
+- Autumn | Summer | Fall
+- 2023
+- 01 | 02 | 03
+- January
+- May
 
 ### API END POINTS:
 
