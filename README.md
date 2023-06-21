@@ -218,6 +218,16 @@ A database model is a conceptual representation of how data is organized and str
 - January
 - May
 
+### Academic Faculty
+
+- title
+
+### Sample Data:
+
+- Faculty of Science and Engineering
+- Faculty of Business Administration
+- Faculty of Arts and Social Science
+
 1. Create Faculty
 2. Read Faculty (Pagination)
 3. Update faculty
@@ -228,19 +238,19 @@ A database model is a conceptual representation of how data is organized and str
 - title
 - cacademicFaculty (Reference)
 
-```json
-- Sample  Data:
+```js
+// Sample  Data:
 
 {
-     title: ‘Department of Computer Science’,
+     title: "Department of Computer Science",
      academicFaculty: 64820578aeaa15acb6483dc5
 }
-- After Populate:
+// After Populate:
 {
-     title: ‘Department of Computer Science’,
+     title: "Department of Computer Science",
      academicFaculty: {
         _id: 64820578aeaa15acb6483dc5,
-        title:’Faculty of Science and Engineering’
+        title:"Faculty of Science and Engineering"
        }
 }
 
