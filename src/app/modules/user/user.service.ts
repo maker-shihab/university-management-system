@@ -1,28 +1,38 @@
-import config from '../../../config/index'
-import ApiError from '../../../error/ApiError'
-import { IUser } from './user.interface'
-import { User } from './user.model'
-import { generatedUserId } from './user.utils'
+import config from '../../../config/index';
+import ApiError from '../../../error/ApiError';
+import { AcademicSemester } from '../academicSemester/academicSemester.model';
+import { IStudent } from '../student/student.interface';
+import { IUser } from './user.interface';
+import { User } from './user.model';
+import { generateStudentId } from './user.utils';
 
-const createUser = async (user: IUser): Promise<IUser | null> => {
-  // Auto generated incremental ID
-  const id = await generatedUserId()
-
-  user.id = id
-
+const createStudent = async (
+  student: IStudent,
+  user: IUser
+): Promise<IUser | null> => {
   // Default Password
   if (!user.password) {
-    user.password = config.default_user_pass as string
+    user.password = config.default_student_pass as string;
   }
 
-  const createdUser = await User.create(user)
+  // Set Role
+  user.role = 'student';
+
+  const academicSemester = await AcademicSemester.findById(
+    student.academicSemester
+  );
+
+  // Generet Student Id
+  const id = await generateStudentId(academicSemester);
+
+  const createdUser = await User.create(user);
 
   if (!createdUser) {
-    throw new ApiError(400, 'Failed to create user!')
+    throw new ApiError(400, 'Failed to create user!');
   }
-  return createdUser
-}
+  return createdUser;
+};
 
 export const UserService = {
-  createUser,
-}
+  createStudent,
+};
