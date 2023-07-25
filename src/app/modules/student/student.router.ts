@@ -1,5 +1,7 @@
 import express from 'express';
 import validateRequest from '../../middlewares/ValidateRequest';
+import { StudentController } from './student.controller';
+import { StudentValidaion } from './student.validation';
 const router = express.Router();
 
 router.get('/:id', StudentController.getSingleStudent);
