@@ -18,15 +18,15 @@ const userSchema = new Schema<IUser>(
     },
     student: {
       type: Schema.Types.ObjectId,
-      role: 'Student',
+      ref: 'Student',
     },
     faculty: {
       type: Schema.Types.ObjectId,
-      role: 'Faculty',
+      ref: 'Faculty',
     },
     admin: {
       type: Schema.Types.ObjectId,
-      role: 'Admin',
+      ref: 'Admin',
     },
   },
   {
@@ -36,5 +36,4 @@ const userSchema = new Schema<IUser>(
     },
   }
 );
-
 export const User = model<IUser, UserModel>('User', userSchema);

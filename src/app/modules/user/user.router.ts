@@ -2,13 +2,24 @@ import express from 'express';
 import validateRequest from '../../middlewares/ValidateRequest';
 import { UserController } from './user.controller';
 import { UserValidation } from './user.validation';
-
 const router = express.Router();
 
 router.post(
   '/create-student',
-  validateRequest(UserValidation.createUserZodSchema),
+  validateRequest(UserValidation.createStudentZodSchema),
   UserController.createStudent
 );
 
-export default router;
+router.post(
+  '/create-faculty',
+  validateRequest(UserValidation.createFacultyZodSchema),
+  UserController.createFaculy
+);
+
+router.post(
+  '/create-admin',
+  validateRequest(UserValidation.createAdminZodSchema),
+  UserController.createAdmin
+);
+
+export const UserRoutes = router;
